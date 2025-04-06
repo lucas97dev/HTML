@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Tabela HTML</title>
+</head>
+<body>
+  <h1>Tabelas em HTML</h1>
+
+  <!--
+    As tabelas em HTML são usadas para organizar e exibir dados em linhas e colunas.
+    São úteis para mostrar informações como em planilhas, comparações ou relatórios.
+    Quando bem estruturadas, ajudam inclusive na acessibilidade para leitores de tela.
+  -->
+
+  <h2>Exemplo de Tabela de Alunos</h2>
+
+  <table border="1">
+    <!-- A tag <table> envolve toda a estrutura da tabela -->
+    
+    <thead>
+      <!-- <thead> define o cabeçalho da tabela, que contém os títulos das colunas -->
+      <tr>
+        <!-- <tr> define uma linha da tabela -->
+        <th>Nome</th>      <!-- <th> define uma célula de cabeçalho (título da coluna) -->
+        <th>Idade</th>
+        <th>Curso</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- <tbody> representa o corpo da tabela, onde os dados principais são colocados -->
+      <tr>
+        <td>João</td>      <!-- <td> define uma célula de dado comum -->
+        <td>20</td>
+        <td>Engenharia</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>22</td>
+        <td>Design</td>
+      </tr>
+      <tr>
+        <td>Lucas</td>
+        <td>19</td>
+        <td>Ciência da Computação</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <!-- <tfoot> representa o rodapé da tabela, usado para resumos ou observações finais -->
+      <tr>
+        <td colspan="3">Total de alunos: 3</td>
+        <!-- colspan="3" faz a célula ocupar 3 colunas -->
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
+
+
+<!-- resumo didatico:
+<table> → Estrutura da tabela
+
+<thead> → Cabeçalho (títulos das colunas)
+
+<tbody> → Corpo com os dados principais
+
+<tfoot> → Rodapé com resumos ou totais
+
+<tr> → Linha da tabela
+
+<th> → Cabeçalho da coluna (negrito e centralizado por padrão)
+
+<td> → Célula de dados -->

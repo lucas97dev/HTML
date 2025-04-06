@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo com colspan e border</title>
+</head>
+<body>
+  <h1>Exemplo de Tabela com <code>colspan</code> e <code>border</code></h1>
+
+  <!--
+    O atributo "border" na tag <table> define uma borda visível para a tabela.
+    O atributo "colspan" é usado para fazer uma célula ocupar duas ou mais colunas.
+  -->
+
+  <table border="1">
+    <!-- border="1" desenha as bordas para a tabela e suas células -->
+
+    <thead>
+      <tr>
+        <th colspan="3">Relatório de Vendas - Abril 2025</th>
+        <!-- colspan="3" faz essa célula ocupar 3 colunas, funcionando como um título da tabela -->
+      </tr>
+      <tr>
+        <th>Produto</th>
+        <th>Quantidade Vendida</th>
+        <th>Valor Total</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Camisa</td>
+        <td>50</td>
+        <td>R$ 1.250,00</td>
+      </tr>
+      <tr>
+        <td>Calça</td>
+        <td>30</td>
+        <td>R$ 1.800,00</td>
+      </tr>
+      <tr>
+        <td>Tênis</td>
+        <td>20</td>
+        <td>R$ 2.000,00</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="2"><strong>Total Geral</strong></td>
+        <!-- colspan="2" faz essa célula de rodapé ocupar as duas primeiras colunas -->
+        <td><strong>R$ 5.050,00</strong></td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
