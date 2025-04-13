@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Como Clonar um Repositório</title>
+</head>
+<body>
+
+  <h1>Como Clonar um Repositório do GitHub</h1>
+
+  <p><strong>Objetivo:</strong> Aprender a copiar um repositório do GitHub para o seu computador local usando o comando <code>git clone</code>.</p>
+
+  <h2>O que significa "clonar"?</h2>
+  <p>Clonar é o processo de copiar um projeto que está no GitHub (ou outro servidor remoto) para o seu computador. Você poderá ver os arquivos, editar o projeto e até contribuir com ele.</p>
+
+  <h2>1. Copie a URL do repositório</h2>
+  <ol>
+    <li>Abra a página do repositório que você quer clonar no GitHub.</li>
+    <li>Clique no botão verde <strong>"Code"</strong>.</li>
+    <li>Escolha a opção <strong>HTTPS</strong> (ou SSH, se souber usar) e clique em "Copy".</li>
+    <li>Exemplo de URL: <code>https://github.com/seu-usuario/seu-repositorio.git</code></li>
+  </ol>
+
+  <h2>2. Abra o terminal</h2>
+  <p>Abra o terminal ou o Git Bash no local onde deseja salvar o repositório clonado (ex: sua pasta de projetos).</p>
+
+  <h2>3. Use o comando <code>git clone</code></h2>
+  <pre>
+git clone https://github.com/usuario/repositorio.git
+  </pre>
+  <p>Após rodar esse comando, o Git criará uma nova pasta com o nome do repositório e baixará todos os arquivos de código e histórico.</p>
+
+  <h2>4. Acesse a pasta clonada</h2>
+  <pre>
+cd seu-repositorio
+  </pre>
+
+  <p>Agora você está dentro do projeto clonado e pode começar a trabalhar com ele localmente.</p>
+
+  <h2>Dica:</h2>
+  <ul>
+    <li>Você pode clonar repositórios de outras pessoas (se forem públicos) para estudar, modificar ou contribuir.</li>
+    <li>Se você for colaborar, depois de clonar é importante criar seu próprio branch para não alterar o código da branch principal sem combinar.</li>
+  </ul>
+
+  <h2>Comando usado:</h2>
+  <pre>git clone [URL]</pre>
+
+  <h2>Exemplo prático:</h2>
+  <pre>
+git clone https://github.com/DiegoCampos1/html-css-ia.git
+cd html-aula3
+code .
+  </pre>
+
+  <p><code>code .</code> abre o projeto no VS Code (se estiver instalado).</p>
+
+</body>
+</html>

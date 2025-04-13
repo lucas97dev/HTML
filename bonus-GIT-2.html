@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Subir código para o GitHub</title>
+</head>
+<body>
+
+  <h1>Subindo seu projeto para o GitHub</h1>
+
+  <p><strong>Objetivo:</strong> Aprender como criar um repositório no GitHub e enviar (fazer <em>push</em>) os arquivos de um projeto local para ele.</p>
+
+  <h2>1. Crie uma conta (se ainda não tiver)</h2>
+  <p>Acesse <a href="https://github.com" target="_blank">https://github.com</a> e clique em <strong>Sign up</strong> para criar uma conta.</p>
+
+  <h2>2. Criando um novo repositório</h2>
+  <ol>
+    <li>Acesse <a href="https://github.com" target="_blank">https://github.com</a> e faça login.</li>
+    <li>Clique no botão <strong>"New" ou "Novo repositório"</strong>.</li>
+    <li>Escolha um nome (ex: <code>meu-primeiro-repo</code>)</li>
+    <li>Deixe como público ou privado, como preferir.</li>
+    <li><strong>Não</strong> marque a opção "Add a README" (iremos adicionar localmente).</li>
+    <li>Clique em <strong>Create repository</strong>.</li>
+  </ol>
+
+  <h2>3. Conectando seu projeto local ao GitHub</h2>
+  <p>Suponha que você já tenha um projeto HTML versionado com Git (se não tiver, volte para o exercício anterior).</p>
+
+  <ol>
+    <li>Copie a URL do repositório recém-criado (de preferência em HTTPS).</li>
+    <li>No terminal, dentro da pasta do seu projeto, digite:</li>
+    <pre>
+git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPO.git
+    </pre>
+
+    <li>Garanta que o branch se chame <code>main</code>:
+      <pre>git branch -M main</pre>
+    </li>
+
+    <li>Envie o conteúdo do projeto para o GitHub:
+      <pre>git push -u origin main</pre>
+    </li>
+  </ol>
+
+  <h2>4. Verifique no navegador</h2>
+  <p>Atualize a página do seu repositório no GitHub. Os arquivos do seu projeto agora estarão disponíveis online!</p>
+
+  <h2>Comandos utilizados:</h2>
+  <ul>
+    <li><code>git remote add origin [url]</code> – Conecta o repositório local ao remoto</li>
+    <li><code>git branch -M main</code> – Renomeia o branch atual para "main"</li>
+    <li><code>git push -u origin main</code> – Envia os commits locais para o repositório remoto</li>
+  </ul>
+
+  <h2>Dica:</h2>
+  <p>Você pode usar o <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> para fazer isso de forma visual, se preferir uma interface gráfica.</p>
+
+  <h2>Próximo passo:</h2>
+  <p>No próximo exercício, vamos <strong>clonar (ou fazer um fork) de repositórios</strong>.</p>
+
+</body>
+</html>

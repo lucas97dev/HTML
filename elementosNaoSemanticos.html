@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Elementos Não-Semânticos - HTML</title>
+</head>
+<body>
+
+  <h1>Elementos Não-Semânticos em HTML</h1>
+
+  <p>
+    No HTML, os <strong>elementos não-semânticos</strong> são aqueles que <em>não indicam o tipo de conteúdo</em> que envolvem.
+    Eles são usados principalmente para <strong>estruturação visual</strong> e aplicação de <strong>estilos com CSS</strong>.
+  </p>
+
+  <h2>&lt;div&gt; – Elemento de Bloco</h2>
+  <p>
+    A <code>&lt;div&gt;</code> é um elemento de nível de bloco, ou seja, ocupa toda a largura disponível e inicia em uma nova linha.
+    É usada para agrupar grandes seções de conteúdo ou outros elementos. Não carrega significado semântico por si só.
+  </p>
+
+  <h3>Exemplo de uso do &lt;div&gt;:</h3>
+  <div style="border: 1px solid #000; padding: 10px;">
+    <h4>Notícia:</h4>
+    <p>Hoje tivemos uma aula sobre HTML semântico e não-semântico.</p>
+    <p>Confira a <a href="#exemplo-span">dica sobre <code>&lt;span&gt;</code></a> mais abaixo.</p>
+  </div>
+
+  <p>Essa <code>&lt;div&gt;</code> está sendo usada para agrupar uma seção de conteúdo com borda e espaçamento, mas sem significado específico.</p>
+
+  <h2 id="exemplo-span">&lt;span&gt; – Elemento em Linha</h2>
+  <p>
+    O <code>&lt;span&gt;</code> é um elemento <strong>inline</strong>: ele ocupa apenas o espaço do conteúdo e não quebra a linha. É ideal para aplicar estilos
+    ou comportamentos em partes pequenas de um texto.
+  </p>
+
+  <h3>Exemplo de uso do &lt;span&gt;:</h3>
+  <p>
+    Aprender HTML é <span style="color: green; font-weight: bold;">essencial</span> para se tornar um bom desenvolvedor front-end.
+  </p>
+
+  <p>
+    No exemplo acima, o <code>&lt;span&gt;</code> foi usado para destacar a palavra <em>essencial</em> sem quebrar o parágrafo.
+  </p>
+
+  <h2>Vantagens dos Elementos Não-Semânticos</h2>
+  <ul>
+    <li><strong>Flexibilidade:</strong> úteis para criar layouts complexos com CSS.</li>
+    <li><strong>Organização:</strong> ajudam a agrupar conteúdo mesmo quando o propósito não se encaixa em uma tag semântica.</li>
+    <li><strong>Compatibilidade:</strong> são amplamente suportados e utilizados em frameworks e bibliotecas modernas.</li>
+  </ul>
+
+  <h2>Resumo</h2>
+  <p>
+    Use <code>&lt;div&gt;</code> para agrupar blocos de conteúdo e <code>&lt;span&gt;</code> para destacar trechos dentro de textos.
+    Apesar de não serem semânticos, são essenciais para estruturar e estilizar páginas HTML de forma flexível.
+  </p>
+
+</body>
+</html>

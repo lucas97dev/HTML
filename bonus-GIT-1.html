@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Como instalar o Git</title>
+</head>
+<body>
+
+  <h1>Instalando o Git</h1>
+
+  <p>Antes de começar a usar o Git, é necessário instalá-lo no seu computador.</p>
+
+  <h2>Passos:</h2>
+
+  <h3>Instalação do Git, via site:</h3>
+  <ol>
+    <li>Acesse: <a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a></li>
+    <li>O site já detecta seu sistema (Windows, Mac ou Linux). Clique em "Download".</li>
+    <li>Execute o instalador e siga os passos padrão (pode manter as opções sugeridas).</li>
+    <li>Após a instalação, abra o terminal e digite:
+      <pre>git --version</pre>
+      Se o Git estiver instalado corretamente, você verá a versão atual.
+    </li>
+  </ol>
+  <h3>Instalação do Git, via terminal:</h3>
+  <ol>
+    <li>Abra o terminal.</li>
+    <li>Para Windows, use o comando:
+      <pre>winget install --id Git.Git -e --source winget</pre>
+    </li>
+    <li>Para Mac, use o comando:
+      <pre>brew install git</pre>
+    </li>
+    <li>Para Linux, use o comando:
+      <pre>sudo apt-get install git</pre>
+    </li>
+    <li>Após a instalação, digite:
+      <pre>git --version</pre>
+      Se o Git estiver instalado corretamente, você verá a versão atual.
+    </li>
+  </ol>
+
+  <h2>Configuração Inicial:</h2>
+  <p>Após a instalação, é importante configurar seu nome e email, que serão usados em seus commits.</p>
+  <p>Abra o terminal e digite:</p>
+  <pre>
+git config --global user.name "Seu Nome"
+git config --global user.email "Seu Email"
+
+  </pre>
+  <p>Substitua "Seu Nome" e "Seu Email" pelos seus dados reais.</p>
+  <p>Para verificar se as configurações foram salvas corretamente, use:</p>
+  <pre>
+git config --global --list
+  </pre>
+  <p>Isso mostrará suas configurações atuais do Git.</p>
+  <p>Agora você está pronto para usar o Git!</p>
+
+  <h2>Dica:</h2>
+  <p>Instale também o <strong>GitHub Desktop</strong> se preferir uma interface gráfica para usar o Git: <a href="https://desktop.github.com/" target="_blank">desktop.github.com</a></p>
+  <p>Com o vscode instalado, pode-se utilizar o git com o vscode</p>
+
+  <h2>Links Úteis:</h2>
+  <ul>
+    <li><a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a></li>
+    <li><a href="https://github.com/" target="_blank">https://github.com/</a></li>
+    <li><a href="https://desktop.github.com/" target="_blank">https://desktop.github.com/</a></li>
+  </ul>
+
+  <h2>Referências e tutoriais:</h2>
+  <ul>
+    <li><a href="https://git-scm.com/doc" target="_blank">https://git-scm.com/doc</a></li>
+    <li><a href="https://git-scm.com/doc/user-manual" target="_blank">https://git-scm.com/doc/user-manual</a></li>
+    <li><a href="https://www.youtube.com/watch?v=SHTYPK3_oCE" target="_blank">https://www.youtube.com/watch?v=SHTYPK3_oCE</a></li>
+    <li><a href="https://www.alura.com.br/artigos/iniciando-repositorio-git?utm_term=&utm_campaign=%5BAO%5D+%5BPerformance+Max%5D+%5BVenda%5D&utm_source=google&utm_medium=cpc&campaign_id=22048829191__&utm_id=22048829191__&hsa_acc=7964138385&hsa_cam=%5BAO%5D+%5BPerformance+Max%5D+%5BVenda%5D&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=google&hsa_ver=3&gad_source=1&gbraid=0AAAAADpqZICi0M--U26yzwKVjRsZhW7yY&gclid=CjwKCAjwwe2_BhBEEiwAM1I7sZtd06KD62egTlTvoJ3O99uxZtw69JnqphT_a5psWRtsZvlPOyBjsRoC4CcQAvD_BwE" target="_blank">https://www.alura.com.br/artigos/iniciando-repositorio-git</a></li>
+
+  </ul>
+
+</body>
+</html>

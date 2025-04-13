@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulários em HTML</title>
+</head>
+<body>
+
+  <h1>Formulários em HTML</h1>
+
+  <p>
+    Formulários são fundamentais para tornar páginas web interativas. Eles permitem coletar dados, realizar cadastros, enviar mensagens e muito mais.
+  </p>
+
+  <h2>Conceitos Básicos</h2>
+
+  <ul>
+    <li><strong>&lt;form&gt;</strong>: Tag que define um formulário. Agrupa os campos e botões.</li>
+    <li><strong>action</strong>: URL para onde os dados serão enviados.</li>
+    <li><strong>method</strong>: Método HTTP de envio (geralmente <code>GET</code> ou <code>POST</code>).</li>
+  </ul>
+
+  <h3>Importância da Acessibilidade</h3>
+  <p>
+    Usar a tag <code>&lt;label&gt;</code> corretamente associada aos campos melhora a acessibilidade,
+    ajudando usuários com leitores de tela a entenderem melhor o formulário.
+  </p>
+
+  <h2>Exemplo de Estrutura de Formulário</h2>
+
+  <form>
+    <p>
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required>
+    </p>
+
+    <p>
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" name="email" required>
+    </p>
+
+    <p>
+      <label for="senha">Senha:</label><br>
+      <input type="password" id="senha" name="senha">
+    </p>
+
+    <p>
+      <label for="telefone">Telefone:</label><br>
+      <input type="tel" id="telefone" name="telefone">
+    </p>
+
+    <p>
+      <label for="website">Website:</label><br>
+      <input type="url" id="website" name="website">
+    </p>
+
+    <p>
+      <label for="busca">Buscar no site:</label><br>
+      <input type="search" id="busca" name="busca">
+    </p>
+
+    <p>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </p>
+  </form>
+
+  <h2>Resumo dos Tipos de Input</h2>
+  <ul>
+    <li><code>type="text"</code>: Campo de texto simples</li>
+    <li><code>type="email"</code>: Valida e-mails</li>
+    <li><code>type="password"</code>: Oculta o conteúdo digitado</li>
+    <li><code>type="tel"</code>: Entrada de telefone</li>
+    <li><code>type="url"</code>: Valida links</li>
+    <li><code>type="search"</code>: Campo estilizado para buscas</li>
+  </ul>
+
+</body>
+</html>
